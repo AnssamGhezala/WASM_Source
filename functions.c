@@ -21,7 +21,7 @@ void *bg_func(void *arg) {
 
 // Foreground thread and main entry point
 int main(int argc, char *argv[]) {
-    char* input_filename = "Test_1.png";
+    char* input_filename = "small.png";
     char* output_filename = "Test_1_output.png"; 
 
     unsigned char* image, * new_image;
