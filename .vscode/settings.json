@@ -12,6 +12,7 @@
         "deque": "c",
         "filesystem": "c",
         "ios": "c",
-        "iterator": "c"
+        "iterator": "c",
+        "algorithm": "c"
     }
 }

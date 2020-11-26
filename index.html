@@ -9,6 +9,17 @@
 </head>
 <body>
     <script>
+        // FS.writeFile('file', 'foobar');
+        // const blob = new Blob([FS.readFile('Test_1.png')], {'type': 'image/png'});
+        var factory = require('./a.out.js');
+
+        factory().then((instance) => {
+        instance.int_sqrt(); // direct calling works
+        // instance.ccall("sayHi"); // using ccall etc. also work
+        // console.log(instance._daysInWeek()); // values can be returned, etc.
+        });
+        // var contents = FS.readFile('Test_1.png', { encoding: 'utf8' });
+
         // value of number of threads   
         // file of img
     //     setTimeout(() => {
