@@ -8,14 +8,17 @@ There are 3 versions of the max-pooling programs that you can run. Each one of t
 
 ## 1. Sequential Max-pooling in JavaScript
 From the root of the directory, go to the seq_js folder containing the code:<br>
-```cd seq_js```
-Open that JavaScript file in the browser
+```cd seq_js``` <br>
+Open the **index.html** file in the browser (preferably chrome) <br>
+Open the developer tools of the browser to view runtime
 
 ## 2. Sequential Max-pooling in WebAssembly
 Fom the root of the directory, go to the seq_wasm folder:<br>
 ```cd seq_wasm```
 Run the following command:<br>
-```emcc lodepng.c -o test.js functions.c -s INITIAL_MEMORY=672137216 -s --embed-file Test_3.png```
+```emcc lodepng.c -o test.js functions.c -s INITIAL_MEMORY=672137216 -s --embed-file Test_3.png``` <br>
+Open the **index.html** file in the browser (preferably chrome) <br>
+Open the developer tools of the browser to view runtime
 
 ## 3. Parallelized Max-pooling in WebAssembly
 Fom the root of the directory, go to the seq_wasm folder: <br>
@@ -23,4 +26,6 @@ Fom the root of the directory, go to the seq_wasm folder: <br>
 Set the number of commands within the main function, for instance 3:<br>
 ```int num_threads=3```
 Run the following command to have 3 background threads running in parallel:<br>
-```emcc lodepng.c -o test.js functions.c -s USE_PTHREADS=1 -s INITIAL_MEMORY=672137216 -s --embed-file Test_3.png -s PTHREAD_POOL_SIZE=3```
+```emcc lodepng.c -o test.js functions.c -s USE_PTHREADS=1 -s INITIAL_MEMORY=672137216 -s --embed-file Test_3.png -s PTHREAD_POOL_SIZE=3``` <br>
+Open the **index.html** file in the browser (preferably chrome) <br>
+Open the developer tools of the browser to view runtime
