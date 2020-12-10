@@ -1,6 +1,11 @@
 # ECSE420: Parallel Programming - Final Project
+Only recently, a new language, WebAssembly, has been added to browsers, which offers the ability to compile languages such as C, C++, Rust, Go, and many others into a format that can execute in-browser. Our group researched the multithreading, parallelism, and access to low-level hardware functionalities that Web Assembly allows, and performed a study on the performance gain. The case study revolves around a max-pooling algorithm implemented in a previous Lab (Lab0) which was written in 3 diffent versions:
+1. JavaScript (without the use of Web Workers)
+2. Sequentially in C and compiled with emscripten to WASM 
+3. Parallelized in C (using p-threads) and compiled with emscripten to WASM
+Details and results can be found in the Project Report submitted with this deliverable (or [here](https://docs.google.com/document/d/1k2Q8y1LxyThGI2N9-VKu9QoMFYmBXNbfxk6X22ZZzS0/edit?usp=sharing))
 
-## Pre-requesite
+## Pre-requisite
 You first need to install emcc, to do so follow the official emscripten [documentation](https://emscripten.org/docs/getting_started/downloads.html)
 <br>
 <br>
