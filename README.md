@@ -15,7 +15,7 @@ Open that JavaScript file in the browser
 Fom the root of the directory, go to the seq_wasm folder
 ```cd seq_wasm```
 Run the following command:
-```emcc lodepng.c -o test.js functions.c -s INITIAL_MEMORY=672137216 -s --embed-file Test_3.png``
+```emcc lodepng.c -o test.js functions.c -s INITIAL_MEMORY=672137216 -s --embed-file Test_3.png```
 
 ## 3. Parallelized Max-pooling in WebAssembly
 Fom the root of the directory, go to the seq_wasm folder
